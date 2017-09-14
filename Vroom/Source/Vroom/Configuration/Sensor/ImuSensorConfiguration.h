@@ -9,7 +9,7 @@ class ImuSensorConfiguration : public SensorConfiguration
 {
 	public:
 		virtual ~ImuSensorConfiguration() {};
-		virtual void Parse(const rapidjson::Document& document) override
+		virtual void Parse(const rapidjson::Value& document) override
 		{
 			SensorConfiguration::Parse(document);
 

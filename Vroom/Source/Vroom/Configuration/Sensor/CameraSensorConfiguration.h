@@ -14,7 +14,7 @@ class CameraSensorConfiguration : public SensorConfiguration
 		int ImageHeight;
 		CameraOutputType OutputType;
 
-		virtual void Parse(const rapidjson::Document& document) override
+		virtual void Parse(const rapidjson::Value& document) override
 		{
 			SensorConfiguration::Parse(document);
 
